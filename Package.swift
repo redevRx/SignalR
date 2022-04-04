@@ -24,5 +24,6 @@ let package = Package(
         .testTarget(
             name: "SignalRTests",
             dependencies: ["SignalR"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v4, .v4_2, .v5]
 )
