@@ -31,7 +31,7 @@ public class HubConnectionBuilder {
             { logger, permittedTransportTypes in DefaultTransportFactory(logger: logger, permittedTransportTypes: permittedTransportTypes)}
     /**
      Initializes a `HubConnectionBuilder` with a URL.
-     - parameter url: A URL to the SignalR server
+     - parameter url: A URL to the FoxSignalR server
      */
     public init(url: URL) {
         self.url = url

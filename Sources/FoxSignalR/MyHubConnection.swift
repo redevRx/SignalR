@@ -9,7 +9,7 @@
 import Foundation
 
 /**
-`HubConnection` is the client for interacting with SignalR server. It allows invoking server side hub methods and register handlers for client side methods that can be invoked from the server.
+`HubConnection` is the client for interacting with FoxSignalR server. It allows invoking server side hub methods and register handlers for client side methods that can be invoked from the server.
  - note: You need to maintain the reference to the `HubConnection` instance until the connection is stopped
  */
 public class HubConnection {
@@ -60,7 +60,7 @@ public class HubConnection {
         self.hubProtocol = hubProtocol
         self.keepAliveIntervalInSeconds = hubConnectionOptions.keepAliveInterval
         self.logger = logger
-        self.hubConnectionQueue = DispatchQueue(label: "SignalR.hubconnection.queue")
+        self.hubConnectionQueue = DispatchQueue(label: "FoxSignalR.hubconnection.queue")
     }
 
     deinit {

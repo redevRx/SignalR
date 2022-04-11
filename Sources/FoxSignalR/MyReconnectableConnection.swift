@@ -8,7 +8,7 @@
 import Foundation
 
 internal class ReconnectableConnection: Connection {
-    private let connectionQueue = DispatchQueue(label: "SignalR.reconnection.queue")
+    private let connectionQueue = DispatchQueue(label: "FoxSignalR.reconnection.queue")
 
     private let connectionFactory: () -> Connection
     private let reconnectPolicy: ReconnectPolicy

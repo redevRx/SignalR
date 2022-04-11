@@ -42,7 +42,7 @@ public class HttpConnection: Connection {
 
     init(url: URL, options: HttpConnectionOptions, transportFactory: TransportFactory, logger: Logger) {
         logger.log(logLevel: .debug, message: "HttpConnection init")
-        connectionQueue = DispatchQueue(label: "SignalR.connection.queue")
+        connectionQueue = DispatchQueue(label: "FoxSignalR.connection.queue")
         startDispatchGroup = DispatchGroup()
 
         self.url = url

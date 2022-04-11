@@ -30,7 +30,7 @@ public class HttpConnectionOptions {
 
     /**
      Whether to skip the negotiation request when starting a connection.
-     - note: the negotiation request can be skipped only when using the WebSockets transport and cannot be skipped when connecting to SignalR Azure Service
+     - note: the negotiation request can be skipped only when using the WebSockets transport and cannot be skipped when connecting to FoxSignalR Azure Service
     */
     public var skipNegotiation: Bool = false
 
